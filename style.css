@@ -1,5 +1,4 @@
-
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -81,15 +80,15 @@
             margin-bottom: 15px;
         }
 
-        cover-image {
-             display: block;
-             max-width: 10%;     /* diminui a largura máxima */
-             max-height: 50px;  /* limita a altura */
-             width: auto;
-             height: auto;
-             margin-bottom: 20px;
-             border-radius: 8px;
-             box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        .cover-image {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            max-width: 180px;    /* ajuste conforme necessário */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            z-index: 50;
         }
 
         ul {
@@ -191,4 +190,20 @@
             justify-content: center;
             align-items: center;
             height: 100%;
+        }
+
+        /* slides longas com rolagem interna */
+        .slide.scrollable {
+            align-items: flex-start; /* começa do topo */
+            overflow-y: auto;
+            padding-right: 60px; /* espaço para a barra de rolagem */
+        }
+
+        /* estilização simples da scrollbar (WebKit) */
+        .slide.scrollable::-webkit-scrollbar {
+            width: 10px;
+        }
+        .slide.scrollable::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,0.15);
+            border-radius: 6px;
         }

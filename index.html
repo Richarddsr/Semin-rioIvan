@@ -12,7 +12,7 @@
         <!-- Slide 1: Título -->
         <div class="slide active">
             <div class="center-content">
-                <img src="brasao-ufsc-logo-png_seeklogo-22091.png" alt="UFSC logo" class="cover-image"
+                <img src="brasao-ufsc-logo-png_seeklogo-22091.png" alt="UFSC logo" class="cover-image">
                 <h1>🎮 Sistema de RPG</h1>
                 <h1>Combate por Turnos</h1>
                 <p class="subtitle"><strong>Programação Orientada a Objetos em Python</strong></p>
@@ -35,6 +35,7 @@
                 <li><span class="emoji">💡</span> <strong>Habilidades especiais:</strong> cada classe possui poderes exclusivos</li>
             </ul>
         </div>
+
 
         <!-- Slide 3: Mecânicas de Jogo -->
         <div class="slide">
@@ -59,7 +60,79 @@
         </div>
 
         <!-- Slide 4: Encapsulamento -->
-        <div class="slide">
+         <div class="slide scrollable">
+            <h2></h2>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>⚔️ Guerreiro</h3>
+                    <p><strong>HP:</strong> 50 | <strong>ATK:</strong> 13 | <strong>DEF:</strong> 13</p>
+                    <p><strong>Arma:</strong> Hemodrenario (+5 ATK)</p>
+                    <p><strong>Armadura:</strong> Desespero Eterno</p>
+                    <p><strong>Especial:</strong> Golpe Duplo (1 uso)</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🛡️ Paladino</h3>
+                    <p><strong>HP:</strong> 25 | <strong>ATK:</strong> 14 | <strong>DEF:</strong> 15</p>
+                    <p><strong>Arma:</strong> Ruptor Divino (+8 ATK)</p>
+                    <p><strong>Armadura:</strong> Hooker Lamurico</p>
+                    <p><strong>Especial:</strong> Golpe Sagrado (1 uso)</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🔮 Mago</h3>
+                    <p><strong>HP:</strong> 15 | <strong>ATK:</strong> 22 | <strong>DEF:</strong> 10</p>
+                    <p><strong>Arma:</strong> Capuz Da Morte De Rabadon (+10 ATK)</p>
+                    <p><strong>Armadura:</strong> Zhonyas</p>
+                    <p><strong>Especial:</strong> Bola de Fogo (2 usos)</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🏹 Arqueiro</h3>
+                    <p><strong>HP:</strong> 20 | <strong>ATK:</strong> 10 | <strong>DEF:</strong> 10</p>
+                    <p><strong>Arma:</strong> Furacão De Runaan (+8 ATK)</p>
+                    <p><strong>Armadura:</strong> Arco-Escudo</p>
+                    <p><strong>Especial:</strong> Chuva de Flechas (2 usos)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Herança -->
+        <div class="slide scrollable">
+            <h2>🎒 Sistema de Itens</h2>
+            
+            <h3>⚔️ Armas (Bônus de Ataque)</h3>
+            <div class="code-example">
+• Hemodrenario (Guerreiro):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+5 ATK<br>
+• Ruptor Divino (Paladino):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+8 ATK<br>
+• Capuz Da Morte De Rabadon (Mago):&nbsp;&nbsp;&nbsp;+10 ATK<br>
+• Furacão De Runaan (Arqueiro):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+8 ATK
+            </div>
+            
+            <h3>🛡️ Armaduras (Proteção)</h3>
+            <p>Cada classe possui armadura única que complementa seu estilo de jogo</p>
+            
+            <h3>🧪 Consumíveis</h3>
+            <div class="grid">
+                <div class="card">
+                    <h3>💊 Poção de Vida</h3>
+                    <p><strong>Efeito:</strong> Recupera 30 HP</p>
+                    <p><strong>Limite:</strong> 3 usos por batalha</p>
+                    <p><strong>Estratégia:</strong> Use em momentos críticos!</p>
+                </div>
+                
+                <div class="card">
+                    <h3>⚡ Habilidades Especiais</h3>
+                    <p><strong>Guerreiro/Paladino:</strong> 1 uso</p>
+                    <p><strong>Mago/Arqueiro:</strong> 2 usos</p>
+                    <p><strong>Dica:</strong> Timing é essencial!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Polimorfismo -->
+       <div class="slide">
             <h2>🔒 1. Encapsulamento</h2>
             <p>Ocultação dos detalhes internos da classe, expondo apenas o necessário</p>
             
@@ -74,8 +147,8 @@ class Characters():<br>
             <p><strong>Benefício:</strong> Proteção dos dados contra modificações indevidas e garantia de consistência</p>
         </div>
 
-        <!-- Slide 5: Herança -->
-        <div class="slide">
+        <!-- Slide 7: Resumo POO -->
+       <div class="slide">
             <h2>🌳 2. Herança</h2>
             <p>Reutilização de código através de classes pai e filhas</p>
             
@@ -92,8 +165,8 @@ class Warrior(Characters):&nbsp;&nbsp;# Herda tudo<br>
             <p><strong>Resultado:</strong> Todas as 4 classes herdam métodos de <span class="highlight">atacar()</span>, <span class="highlight">receber_dano()</span>, <span class="highlight">curar()</span> e <span class="highlight">usar_pocao()</span></p>
         </div>
 
-        <!-- Slide 6: Polimorfismo -->
-        <div class="slide">
+        <!-- Slide 8: Estrutura do Projeto -->
+       <div class="slide">
             <h2>🎭 3. Polimorfismo</h2>
             <p>Mesmo método, <span class="highlight">comportamentos diferentes</span> em cada classe</p>
             
@@ -112,9 +185,8 @@ dano = ataque_total + 5 - defesa<br>
 self.curar(cura)&nbsp;&nbsp;# ← Cura a si mesmo!
             </div>
         </div>
-
-        <!-- Slide 7: Resumo POO -->
-        <div class="slide">
+        <!-- Slide 8: UML -->
+       <div class="slide">
             <h2>📚 Conceitos de POO Implementados</h2>
             
             <div class="grid">
@@ -139,39 +211,12 @@ self.curar(cura)&nbsp;&nbsp;# ← Cura a si mesmo!
                 </div>
             </div>
         </div>
-
-        <!-- Slide 8: Estrutura do Projeto -->
-        <div class="slide">
-            <h2>📁 Estrutura do Projeto</h2>
-            
-            <div class="code-example">
-Projeto Logica-RPG/<br>
-│<br>
-├── Personagem.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Classe pai<br>
-├── warrior.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Guerreiro<br>
-├── paladino.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Paladino<br>
-├── mago.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Mago<br>
-├── arqueiro.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Arqueiro<br>
-└── battle.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Sistema de combate
-            </div>
-            
-            <h3>⚙️ Tecnologias:</h3>
-            <p><span class="highlight">Python 3.6+</span> • Sem bibliotecas externas • Multiplataforma</p>
-        </div>
-
-        <!-- Slide 8: UML -->
-        <div class="slide">
-            <h2>📁 Estrutura do Projeto</h2>
-            
-            <div class="code-example">
-               <img src="WhatsApp Image 2025-11-24 at 19.21.27.jpeg" alt="UML" style="max-width: 100%; height: auto;">
-            </div>
-            
-            <h3>⚙️ Tecnologias:</h3>
-            <p><span class="highlight">Python 3.6+</span> • Sem bibliotecas externas • Multiplataforma</p>
-        </div>
-
         <!-- Slide 9: Conclusão -->
+       <div class="slide scrollable">
+            <h2>📁 Estrutura do Projeto</h2>
+            <img src="WhatsApp Image 2025-11-24 at 19.21.27.jpeg" alt="Estrutura do Projeto" style="max-width: 100%; height: auto;">
+        </div>
+
         <div class="slide">
             <div class="center-content">
                 <h2>✅ Conclusão</h2>
