@@ -62,17 +62,34 @@
             padding-bottom: 15px;
         }
 
+        strong {
+            color: #445484;
+            font-weight: bold;
+        }
+
         h3 {
             color: #667eea;
             font-size: 1.8em;
             margin: 25px 0 15px 0;
         }
 
+     
         p, li {
             font-size: 1.3em;
             line-height: 1.8;
             color: #333;
             margin-bottom: 15px;
+        }
+
+        cover-image {
+             display: block;
+             max-width: 10%;     /* diminui a largura máxima */
+             max-height: 50px;  /* limita a altura */
+             width: auto;
+             height: auto;
+             margin-bottom: 20px;
+             border-radius: 8px;
+             box-shadow: 0 6px 18px rgba(0,0,0,0.15);
         }
 
         ul {
